@@ -1,0 +1,28 @@
+@use "../global" as g;
+
+/*!
+component > button
+------------------------------
+*/
+.c-button {
+  color: var(--color-font-white);
+  background-color: var(--color-bg-black);
+  font-weight: bold;
+  display: inline-block;
+  border-radius: 100em;
+  width: 180px;
+  height: 45px;
+  display: grid;
+  place-items: center;
+  margin: 0 auto;
+
+  &--black {
+    color: var(--color-font-white);
+    background-color: var(--color-bg-black);
+  }
+
+  &--white {
+    color: var(--color-font-base);
+    background-color: var(--color-bg-white);
+  }
+}

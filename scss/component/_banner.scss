@@ -1,0 +1,11 @@
+@use "../global" as g;
+
+/*!
+component > banner
+------------------------------
+*/
+
+.c-banner {
+  @include g.mq() {
+  }
+}

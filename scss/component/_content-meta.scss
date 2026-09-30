@@ -1,0 +1,49 @@
+@use "../global" as g;
+
+/*!
+component > label
+------------------------------
+*/
+
+.c-content-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.c-date {
+  color: var(--color-font-gray);
+  font-size: 12px;
+}
+
+.c-label {
+  color: var(--color-font-white);
+  font-size: 12px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 0 16px;
+  line-height: 24px;
+  height: 24px;
+  border-radius: 12px;
+  text-align: center;
+
+  &--HTML-CSS {
+    background-color: var(--color-bg-gold);
+  }
+
+  &--JavaScript {
+    background-color: var(--color-bg-green);
+  }
+
+  &--WordPress {
+    background-color: var(--color-bg-blue);
+  }
+
+  &--web-design {
+    background-color: var(--color-bg-orange);
+  }
+
+  &--web制作 {
+    background-color: var(--color-bg-pink);
+  }
+}

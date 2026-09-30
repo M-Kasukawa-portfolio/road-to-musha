@@ -1,0 +1,14 @@
+@use "../global" as g;
+
+/*!
+component > kv
+------------------------------
+*/
+
+.c-kv {
+  padding: 56px 0;
+  background-image: url("../img/bg-pattern-page-head@2x 1.png");
+  background-size: 90px 52.5px;
+  background-repeat: repeat;
+  border-bottom: 1px solid var(--color-border-primary);
+}

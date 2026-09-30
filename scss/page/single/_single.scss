@@ -1,0 +1,74 @@
+@use "../../global" as g;
+
+/*!
+page > single
+------------------------------
+*/
+
+.single-article {
+  padding-top: 54px;
+  @include g.mq() {
+    padding-top: 82px;
+  }
+
+  .c-banner {
+    margin-top: 24px;
+  }
+
+  .c-title-level1--loose {
+    margin-top: 8px;
+  }
+  .single-article-img {
+    margin-top: 24px;
+    display: block;
+  }
+
+  .single-article-text {
+    margin-top: 40px;
+  }
+}
+
+.single-section {
+  margin-top: 64px;
+  @include g.mq() {
+    margin-top: 80px;
+  }
+
+  .single-section-text {
+    margin-top: 24px;
+  }
+
+  .single-section-head {
+    display: flex;
+    border-bottom: 1px solid var(--color-border-primary);
+    margin-top: 24px;
+    padding-bottom: 6px;
+
+    .single-title-icon {
+      width: 28px;
+      height: auto;
+    }
+
+    .c-title-level2 {
+      margin-left: 8px;
+    }
+  }
+}
+
+.single-recommend-head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .single-title-icon {
+    width: 34px;
+  }
+}
+
+.single-recommend {
+  padding: 56px 0;
+}
+
+.single-recommend-title {
+  margin-top: 5.68px;
+}

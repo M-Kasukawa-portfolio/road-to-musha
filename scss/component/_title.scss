@@ -1,0 +1,56 @@
+@use "../global" as g;
+
+/*!
+component > title
+------------------------------
+*/
+%title-base {
+  color: var(--color-font-base);
+  font-family: var(--font-family-base);
+  font-weight: bold !important;
+  display: block;
+}
+
+/*! level1 */
+.c-title-level1 {
+  font-size: 20px;
+  line-height: var(--line-height, 1);
+  @extend %title-base;
+
+  @include g.mq() {
+    font-size: 26px;
+  }
+
+  &--loose {
+    line-height: 1.6;
+  }
+
+  &--center {
+    text-align: center;
+  }
+}
+
+/*! level2 */
+.c-title-level2 {
+  font-size: 18px;
+  line-height: 1.6;
+  @extend %title-base;
+
+  @include g.mq() {
+    font-size: 20px;
+  }
+
+  &--black {
+    color: var(--color-font-white);
+    background-color: var(--color-bg-black);
+    border-radius: 8px;
+    padding: 10px 8px;
+  }
+}
+
+/*! level3 */
+.c-title-level3 {
+  font-size: 18px;
+  line-height: 1;
+  @extend %title-base;
+}

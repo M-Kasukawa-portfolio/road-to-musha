@@ -1,0 +1,33 @@
+@use "../global" as g;
+
+/*!
+component > c-pager
+------------------------------
+*/
+
+.c-pager-inner {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.c-pager-link {
+  display: block;
+  width: 35px;
+  height: 35px;
+  font-size: 14px;
+  color: var(--color-font-base);
+  background-color: var(--color-bg-gray);
+  text-align: center;
+  line-height: 35px;
+}
+
+.c-pager-link:hover {
+  opacity: 0.75;
+}
+
+.c-pager-link.is_active {
+  color: var(--color-font-white);
+  background-color: var(--color-bg-black);
+}

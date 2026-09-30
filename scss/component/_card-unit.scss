@@ -1,0 +1,55 @@
+@use "../global" as g;
+
+/*!
+component > c-card-unit
+------------------------------
+*/
+
+.c-card-unit-inner {
+  display: grid;
+  grid-template-columns: repeat(1, 100%);
+  row-gap: 40px;
+
+  .content-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @include g.mq() {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 24px;
+  }
+  @include g.mq(lg) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .c-card-img {
+    display: block;
+    margin-top: 8px;
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 16px;
+    }
+  }
+
+  .c-title-level2 {
+    margin-top: 8px;
+    @include g.mq() {
+      margin: 8px 0;
+    }
+    @include g.mq(lg) {
+      margin: 8px 0;
+    }
+  }
+}
+
+/* single.htmlページ用に無効化 */
+.single-recommend .c-card-unit-inner {
+  margin-top: 40px;
+  @include g.mq(lg) {
+    grid-template-columns: repeat(2, 1fr); // lgでも2カラムにする
+  }
+}

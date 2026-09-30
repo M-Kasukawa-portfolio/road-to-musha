@@ -1,0 +1,17 @@
+@use "../../global" as g;
+
+/*!
+page > page
+------------------------------
+*/
+
+.page-section {
+  padding: 56px 0;
+  @include g.mq() {
+    padding-top: 64px;
+  }
+}
+
+.page-section-text {
+  margin-top: 24px;
+}
